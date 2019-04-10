@@ -1,0 +1,112 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Assembler 8085",
+	"patterns": [
+    {
+      "include": "#instructions"
+    },
+    {
+      "include": "#tag"
+    },
+    {
+      "include": "#char"
+    },
+    {
+      "include": "#directives"
+    },
+    {
+      "include": "#registers"
+    },
+    {
+      "include": "#hex-number"
+    },
+    {
+      "include": "#decimal-number"
+    },
+    {
+      "include": "#bin-number"
+    },
+    {
+      "include": "#comment-line"
+    }
+  ],
+	"repository": {
+    "instructions": {
+      "patterns": [
+        {
+          "match": "\\b(ACI|ADC|ADD|ADI|ANA|ANI|CALL|CC|CNC|CP|CM|CPE|CPO|CZ|CNZ|CMA|CMC|CMP|CPI|DAA|DAD|DCR|DCX|DI|EI|HLT|IN|INR|INX|JMP|JC|JNC|JP|JM|JPE|JPO|JZ|JNZ|LDA|LDAX|LHLD|LXI|MOV|MVI|NOP|ORA|ORI|OUT|PCHL|POP|PUSH|RAL|RAR|RLC|RRC|RET|RC|RNC|RP|RM|RPE|RPO|RZ|RNZ|RIM|RST|SBB|SBI|SHLD|SIM|SPHL|STA|STAX|STC|SUB|SUI|XCHG|XRA|XRI|XTHL|dW|dB)\\b",
+          "name": "keyword.instructions.assembler"
+        }
+      ]
+    },
+    "directives": {
+      "patterns": [
+        {
+          "match": "\\.(org|data|define)\\b",
+          "name": "keyword.control.directives.assembler"
+        }
+      ]
+    },
+    "registers": {
+      "patterns": [
+        {
+          "match": "\\b(A|B|C|D|E|H|L|M|PSW|SP)\\b",
+          "name": "entity.name.class.assembler"
+        }
+      ]
+    },
+    "hex-number": {
+      "patterns": [
+        {
+          "match": "\\b[a-fA-F0-9]+h\\b",
+          "name": "constant.numeric.hexadecimal.assembler"
+        }
+      ]
+    },
+    "decimal-number": {
+      "patterns": [
+        {
+          "match": "\\b[0-9]+\\b",
+          "name": "constant.numeric.binary.assembler"
+        }
+      ]
+    },
+    "bin-number": {
+      "patterns": [
+        {
+          "match": "\\b[01]+b\\b",
+          "name": "constant.numeric.binary.assembler"
+        }
+      ]
+    },
+    "char": {
+      "name": "string.quoted.single.assembler",
+			"begin": "'",
+			"end": "'",
+			"patterns": [
+				{
+					"name": "constant.character.escape.assembler",
+					"match": "\\\\."
+				}
+			]
+    },
+    "tag": {
+      "patterns": [
+        {
+          "match": "[a-zA-Z]+:",
+          "name": "entity.name.function"
+        }
+      ]
+    },
+    "comment-line": {
+      "patterns": [
+        {
+          "begin": ";[^/]",
+          "end": "$\\n",
+          "name": "comment.line.assembler"
+        }
+      ]
+    }
+  },
+	"scopeName": "source.asm"
+}

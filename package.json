@@ -1,0 +1,28 @@
+{
+    "name": "assembler-intel-8085",
+    "author": "Marcos A. Huck <marcos@huck.com.ar>",
+    "publisher": "marcoshuck",
+    "license": "MIT",
+    "displayName": "Assembler Intel 8085",
+    "description": "Assembler Intel 8085 Language Highlighting for VS Code",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.32.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "asm",
+            "aliases": ["Assembler 8085", "asm"],
+            "extensions": [".8085asm"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "asm",
+            "scopeName": "source.asm",
+            "path": "./syntaxes/asm.tmLanguage.json"
+        }]
+    }
+}
