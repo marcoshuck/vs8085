@@ -1,11 +1,11 @@
 {
-    "name": "assembler-intel-8085",
+    "name": "vs8085",
     "author": "Marcos A. Huck <marcos@huck.com.ar>",
     "publisher": "marcoshuck",
     "license": "MIT",
     "displayName": "Assembler Intel 8085",
-    "description": "Assembler Intel 8085 Language Highlighting for VS Code",
-    "version": "0.0.1",
+    "description": "Assembler Intel 8085 Extension for VS Code",
+    "version": "0.0.2",
     "engines": {
         "vscode": "^1.32.0"
     },
