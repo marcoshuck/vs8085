@@ -4,7 +4,7 @@
 - Resaltado de sintaxis (Language highlighting)
   - Instrucciones (todas en mayúsculas).
   - Directivas.
-  - Etiquetas.
+  - Etiquetas (Solo palabras).
   - Registros y palabras reservadas.
   - Números en hexadecimal, binario y decimal.
   - Caracteres entre comillas simples.
