@@ -15,7 +15,14 @@
 Aún no implementado.
 
 ### Con el paquete VSIX
-Aún no implementado.
+- Descargar el paquete .vsix publicado en este repositorio. **Link de descarga:** https://github.com/marcoshuck/vs8085/releases
+- Abrir Visual Studio Code
+- Apretar F1, se desplegará la paleta de comandos.
+- Escribir VSIX y se mostrará la opción "Install from VSIX".
+- Clickear la opción, buscar el archivo descargado e instalar.
+
+Visual Studio Code lo guiará en el resto del procedimiento.
+
 
 ### De modo manual
  - Descargar el código fuente del repositorio
