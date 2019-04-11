@@ -6,12 +6,22 @@
     "displayName": "Assembler Intel 8085",
     "description": "Assembler Intel 8085 Extension for VS Code",
     "version": "0.0.2",
+    "keywords": ["assembler", "assembly", "language", "highlighting", "extension", "vs", "code", "vs-code", "vscode"],
     "engines": {
         "vscode": "^1.32.0"
     },
     "categories": [
         "Programming Languages"
     ],
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/marcoshuck/vs8085.git"
+    },
+    "bugs": {
+      "email": "marcos@huck.com.ar",
+      "url": "https://github.com/marcoshuck/vs8085/issues"
+    },
+    "homepage": "https://github.com/marcoshuck/vs8085",
     "contributes": {
         "languages": [{
             "id": "asm",
